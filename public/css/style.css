@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700&display=swap');
+
+:root {
+	--white: #ECECEC;
+	--gray: #B0B0B0;
+	--darkGrey: #242424;
+	--black: #141414;
+	--accent: #1881C2;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+	color: var(--white);
+	background: var(--black);
+}
+
+p {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+a {
+	color: var(--grey);
+	text-decoration: none;
+	font-weight: 500;
+	opacity: 0.7;
+	transition: 0.2s;
+}
+a:hover {
+	opacity: 1;
+	transition: 0.2s;
+}
+
+
+input {
+	font-size: 12px;
+	padding: 10px 15px;
+	border-radius: 8px;
+	color: var(--grey);
+	background: var(--darkGrey);
+	border: none;
+	outline: 2px solid transparent;
+	filter: brightness(100%);
+	transition: 0.3s;
+}
+input:focus {
+	filter: brightness(120%);
+	transition: 0.3s;
+}
+
+button {
+	text-transform: uppercase;
+	font-size: 12px;
+	width: fit-content;
+	padding: 10px 15px;
+	color: var(--white);
+	background: var(--darkGrey);
+	filter: brightness(100%);
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+	transition: 0.3s;
+}
+button:hover {
+	filter: brightness(120%);
+	transition: 0.3s;
+}
+
+.flex {
+	display: flex;
+}
+.flexCol {
+	flex-direction: column;
+}
+.flexRow {
+	flex-direction: row;
+}
+
+
+.spinner {
+	animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
